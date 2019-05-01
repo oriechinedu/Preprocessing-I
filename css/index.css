@@ -324,3 +324,13 @@ body {
 .container #portfolio table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+.container footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #808080;
+  padding: 1.5rem 0;
+  color: #fff;
+}
