@@ -21,9 +21,7 @@
 }
 
 :root {
-	font-size : 62.5%;
-	align-self: auto;
-
+	font-size: 62.5%;align-self: auto;
 	@media (max-width: @mobileWidth ) {
 		font-size: 100%;
 	}
@@ -34,16 +32,10 @@
 	height   : 100%;
 	margin   : 0 auto;
 	padding  : @largeFontSize;
-
 	@media (max-width: @mobileWidth) {
-		width  : 100%;
-		padding: @smallFontSize;
+		width: 100vw;
 	}
 
-	h4 {
-		font-size: 1.5rem;
-		padding: 0.8rem 0;
-	}
 	p {
 		font-size  : @mediumFontSize;
 		line-height: 1.5;
@@ -58,12 +50,6 @@
 		.flex-display(flex-end, baseline);
 		margin-bottom: @mediumFontSize;
 
-		@media (max-width: @mobileWidth) {
-			justify-content: center;
-			align-items    : center;
-
-		}
-
 		.nav-link {
 			padding        : @smallFontSize;
 			text-decoration: none;
@@ -73,8 +59,6 @@
 
 			@media (max-width: @mobileWidth) {
 				font-size: @smallFontSize;
-				padding  : 0.8rem;
-
 			}
 
 			&:last-of-type {
@@ -88,7 +72,7 @@
 		flex-direction  : column;
 		width           : inherit;
 		padding         : @mediumFontSize;
-		background-color: @primary;
+		background-color: @secondary;
 
 		.profile-image {
 			width        : 200px;
@@ -101,7 +85,7 @@
 
 		.intro {
 			width         : 100%;
-			border-bottom : 1px solid @secondary;
+			border-bottom : 1px solid @black;
 			padding-bottom: @smallFontSize;
 
 			h1 {
@@ -122,13 +106,12 @@
 			}
 
 			a {
-				background-color: @secondary;
-				padding         : @smallFontSize - 0.4 @mediumFontSize;
+				background-color: @tertiary;
+				padding         : @smallFontSize - 0.4 @smallFontSize;
 				color           : @white;
 				text-decoration : none;
 				font-size       : @mediumFontSize;
 				line-height     : 1.5;
-				border-radius: 4px;
 			}
 		}
 
@@ -145,7 +128,7 @@
 		h3 {
 			font-size     : @largeFontSize;
 			padding-bottom: @smallFontSize;
-			font-weight: bold;
+
 			@media (max-width: @mobileWidth) {
 				font-size: @mediumFontSize;
 			}
@@ -153,11 +136,9 @@
 
 		.education {
 			width: 49%;
-			article {
-				margin: 2rem 0;
-				&:first-of-type {
-					margin: 0;
-				}
+
+			h3 {
+				margin-bottom: @smallFontSize;
 			}
 
 			@media (max-width: @mobileWidth) {
@@ -165,6 +146,7 @@
 				margin-bottom: @smallFontSize;
 			}
 		}
+
 		.skills {
 			width: 49%;
 
@@ -173,20 +155,15 @@
 			}
 
 			ul {
-				border: 1px solid @tertiary;
-
-				@media (max-width: @mobileWidth) {
-					width: 100%;
-				}
+				border: 1px solid @secondary;
 
 				li {
-					border-bottom: 1px solid @tertiary;
+					border-bottom: 1px solid @secondary;
 					padding      : @mediumFontSize;
 					font-size    : @mediumFontSize;
 
 					@media (max-width: @mobileWidth) {
 						font-size: @smallFontSize;
-						width    : 100%;
 					}
 
 					&:last-of-type {
@@ -218,7 +195,7 @@
 				padding-bottom  : 12px;
 				text-align      : left;
 				background-color: @secondary;
-				color           : @white;
+				color           : @black;
 				font-size       : @mediumFontSize;
 
 				@media (max-width: @mobileWidth) {
@@ -228,13 +205,11 @@
 
 			td,
 			th {
-				border : 1px solid @tertiary;
+				border : 1px solid #ddd;
 				padding: 8px;
 			}
-
 			td {
 				font-size: @mediumFontSize;
-
 				@media (max-width: @mobileWidth) {
 					font-size: @smallFontSize;
 				}
@@ -246,7 +221,7 @@
 				}
 
 				&:nth-child(even) {
-					background-color: @tertiary;
+					background-color: #f2f2f2;
 				}
 			}
 
@@ -254,7 +229,7 @@
 	}
 
 	#contact {
-		margin     : @largeFontSize 0;
+		margin     : @mediumFontSize 0;
 		padding-top: @mediumFontSize;
 		.flex-display(center, center);
 		flex-direction: column;
@@ -271,26 +246,9 @@
 		.links {
 			.flex-display(center, center);
 
-			i {
-				font-size: @largeFontSize + 1;
-				padding  : 1rem;
-				color    : @secondary;
-
-				&.twitter:hover {
-					color: @twitterColor;
-				}
-
-				&.facebook:hover {
-					color: @facebookColor;
-				}
-
-				&.linkedin:hover {
-					color: @linkedinColor;
-				}
-
-				&.github:hover {
-					color: @githubColor;
-				}
+			.link-img {
+				width : 60px;
+				height: 50px;
 			}
 		}
 	}
@@ -298,7 +256,7 @@
 	footer {
 		width: 100%;
 		.flex-display(center, center);
-		background-color: @secondary;
+		background-color: @tertiary;
 		padding         : @mediumFontSize 0;
 		color           : @white;
 	}
