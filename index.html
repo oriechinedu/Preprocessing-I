@@ -1,19 +1,108 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinedu Orie Resume</title>
   <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <nav class="navbar">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <section class="home">
+      <div class="profile-image">
+        <img src="images/chinedu-orie.jpg" alt="Chinedu Orie">
+      </div>
+      <article class="intro">
+        <h1>Chinedu Orie - Software Engineer</h1>
+        <p>I make stuff that run on the web and give brain to inanimate microchips</p>
+      </article>
+      <div class="hire-me">
+        <p>Occasionally I have time to work on side projects, if you're interested, let me know via any of the media on
+          this website </p>
+        <a href="#" class="team-up">Let's Team Up</a>
+      </div>
+    </section>
+    <section id="about">
+      <div class="education">
+        <h3>Education</h3>
+        <p>
+          Bachelor of Engineering (Second class Upper division)
+        </p>
+        <p>
+          Computer Engineering
+        </p>
+        <p>Nnamdi Azikiwe University, Awka</p>
+        <p>2015/2016</p>
+      </div>
+      <div class="skills">
+        <h3>Stuff I'm Good At:</h3>
+        <ul>
+          <li>HTML5 & CSS3</li>
+          <li>Javascript</li>
+          <li>NodeJs</li>
+          <li>React & Redux</li>
+          <li>Vuejs</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h3>Work History</h3>
+      <table>
+        <tr>
+          <th>Yrs</th>
+          <th>Company</th>
+          <th>Title</th>
+          <th>Tech Used</th>
+        </tr>
+        <tr>
+          <td>0.1</td>
+          <td>Andela</td>
+          <td>Software Engineer</td>
+          <td>Javascript</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Hotels.ng</td>
+          <td>Software Developer</td>
+          <td>Laravel & Vuejs</td>
+        </tr>
+        <tr>
+          <td>0.5</td>
+          <td>HNG Internship</td>
+          <td>Intern</td>
+          <td>Laravel & Vuejs</td>
+        </tr>
+        <tr>
+          <td>0.5</td>
+          <td>TribeSquare</td>
+          <td>Intern</td>
+          <td>Laravel & Vuejs</td>
+        </tr>
+      </table>
+    </section>
+    <section id="contact">
+      <h3>Contact Me...</h3>
+      <div class="links">
+        <a href="#"><img src="images/linkedin.png" alt="linkedin logo" class="link-img"></a>
+        <a href="#"><img src="images/twitter.png" alt="twitter logo" class="link-img"></a>
+        <a href="#"><img src="images/facebook.png" alt="facebook logo" class="link-img"></a>
+        <a href="#"><img src="images/github.png" alt="github logo" class="link-img"></a>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Awesomeness 2019</p>
+    </footer>
+  </div>
 </body>
+
 </html>

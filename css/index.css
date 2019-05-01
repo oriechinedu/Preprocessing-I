@@ -1,1 +1,395 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+:root {
+  font-size: 62.5%;
+  align-self: auto;
+}
+@media (max-width: 500px) {
+  :root {
+    font-size: 100%;
+  }
+}
+.container {
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .container p {
+    font-size: 1rem;
+  }
+}
+.container .navbar {
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 500px) {
+  .container .navbar {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .navbar .nav-link {
+  padding: 1rem;
+  text-decoration: none;
+  color: #282D30;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .container .navbar .nav-link {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+.container .navbar .nav-link:last-of-type {
+  padding-right: 0;
+}
+.container .home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: inherit;
+  padding: 1.5rem;
+  background-color: #E8ECEF;
+}
+.container .home .profile-image {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+.container .home .profile-image img {
+  width: 100%;
+}
+.container .home .intro {
+  width: 100%;
+  border-bottom: 1px solid #808080;
+  padding-bottom: 1rem;
+}
+.container .home .intro h1 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  .container .home .intro h1 {
+    font-size: 1.5rem;
+  }
+}
+.container .home .hire-me {
+  padding-top: 1rem;
+}
+.container .home .hire-me p {
+  padding-bottom: 1rem;
+}
+.container .home .hire-me a {
+  background-color: #808080;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.container #about {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container #about {
+    flex-direction: column;
+  }
+}
+.container #about h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .container #about h3 {
+    font-size: 1.5rem;
+  }
+}
+.container #about .education {
+  width: 49%;
+}
+.container #about .education h3 {
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .container #about .education {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+.container #about .skills {
+  width: 49%;
+}
+@media (max-width: 500px) {
+  .container #about .skills {
+    width: 100%;
+  }
+}
+.container #about .skills ul {
+  border: 1px solid #F2F2F2;
+}
+@media (max-width: 500px) {
+  .container #about .skills ul {
+    width: 100%;
+  }
+}
+.container #about .skills ul li {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .container #about .skills ul li {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+.container #about .skills ul li:last-of-type {
+  border-bottom: 0;
+}
+.container #portfolio {
+  width: 100%;
+}
+.container #portfolio h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .container #portfolio h3 {
+    font-size: 1.5rem;
+  }
+}
+.container #portfolio table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container #portfolio table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #808080;
+  color: #fff;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .container #portfolio table th {
+    font-size: 1rem;
+  }
+}
+.container #portfolio table td,
+.container #portfolio table th {
+  border: 1px solid #F2F2F2;
+  padding: 8px;
+}
+.container #portfolio table td {
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .container #portfolio table td {
+    font-size: 1rem;
+  }
+}
+.container #portfolio table tr:hover {
+  background-color: #ddd;
+}
+.container #portfolio table tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+.container #contact {
+  margin: 1.5rem 0;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.container #contact h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .container #contact h3 {
+    font-size: 1.5rem;
+  }
+}
+.container #contact .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container #contact .links .link-img {
+  width: 60px;
+  height: 50px;
+}
+.container footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #808080;
+  padding: 1.5rem 0;
+  color: #fff;
+}
